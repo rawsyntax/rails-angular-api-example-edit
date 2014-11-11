@@ -34,6 +34,8 @@ GEM
       sprockets
       tilt
     arel (5.0.1.20140414130214)
+    bootstrap-sass (3.3.0.1)
+      sass (~> 3.2)
     bower-rails (0.9.0)
     builder (3.2.2)
     coffee-rails (4.0.1)
@@ -143,6 +145,7 @@ PLATFORMS
 DEPENDENCIES
   active_model_serializers
   angular-rails-templates
+  bootstrap-sass (~> 3.3.0)
   bower-rails
   coffee-rails (~> 4.0.0)
   database_cleaner
