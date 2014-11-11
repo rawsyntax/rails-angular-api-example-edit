@@ -8,4 +8,27 @@ class Api::EmployeesController < ApplicationController
 
     render json: serialized_employees
   end
+
+  def update
+    employee = Employee.find(params[:id])
+
+    if employee.update(employee_params)
+      render json: employee
+    else
+      render json: employee.errors.messages, status: :bad_request
+    end
+  end
+
+  private
+
+  def employee_params
+    attributes = [
+      :salary,
+      :name,
+      :email,
+      :ssn
+    ]
+
+    params.require(:employee).permit(attributes)
+  end
 end
