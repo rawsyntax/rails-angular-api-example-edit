@@ -5,6 +5,7 @@
 //= require lodash
 //= require restangular
 
+//=require angular-bootstrap
 //= require bootstrap-sprockets
 
 //= require angular-app/app
