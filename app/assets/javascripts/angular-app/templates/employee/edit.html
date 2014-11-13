@@ -1,0 +1,48 @@
+<div class="modal-header">
+  <h4 class="modal-title">Edit Employee</h4>
+</div>
+
+<div class="modal-body">
+  <form name="" ng-submit="submitEmployee(employee)">
+    <div class="form-group">
+      <div class="row">
+        <div class="col-xs-12">
+          <label>Name<span class="required"> required</span></label>
+          <input class="form-control" ng-model="employee.name">
+        </div>
+      </div>
+    </div>
+
+    <div class="form-group">
+      <div class="row">
+        <div class="col-xs-12">
+          <label>Email<span class="required"> required</span></label>
+          <input class="form-control" ng-model="employee.email">
+        </div>
+      </div>
+    </div>
+
+    <div class="form-group">
+      <div class="row">
+        <div class="col-xs-12">
+          <label>SSN<span class="required"> required</span></label>
+          <input class="form-control" ng-model="employee.ssn">
+        </div>
+      </div>
+    </div>
+
+    <div class="form-group">
+      <div class="row">
+        <div class="col-xs-12">
+          <label>Salary<span class="required"> required</span></label>
+          <input class="form-control" ng-model="employee.salary">
+        </div>
+      </div>
+    </div>
+
+    <div class="modal-footer">
+      <button type="button" class="btn btn-default" data-dismiss="modal" ng-click="cancel()">Cancel</button>
+      <button type="submit" class="btn btn-primary">Save Changes</button>
+    </div>
+  </form>
+</div>

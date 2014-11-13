@@ -9,7 +9,7 @@
     </thead>
     <tbody>
       <tr ng-repeat="employee in employees">
-        <td>{{employee.name}}</td>
+        <td><a ng-click="editEmployee(employee)">{{employee.name}}</a></td>
         <td>{{employee.email}}</td>
         <td>{{employee.ssn}}</td>
         <td>{{employee.salary | currency}}</td>

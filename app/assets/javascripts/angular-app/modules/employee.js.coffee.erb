@@ -2,7 +2,12 @@
   .module('app.employeeApp', [
     'restangular'
     'ui.bootstrap'
+    'templates'
   ])
   .run(->
     console.log 'employeeApp running'
   )
+
+@employeeApp.config(['$httpProvider', ($httpProvider)->
+    $httpProvider.defaults.headers.common['X-CSRF-Token'] = $('meta[name=csrf-token]').attr('content')
+])
