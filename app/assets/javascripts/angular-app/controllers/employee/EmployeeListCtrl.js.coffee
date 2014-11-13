@@ -18,6 +18,5 @@ angular.module('app.employeeApp').controller("EmployeeListCtrl", [
 
     EmployeeService.list().then((employees) ->
       $scope.employees = employees
-      console.dir employees
     )
 ])

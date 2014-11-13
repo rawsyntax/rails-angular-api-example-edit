@@ -11,7 +11,7 @@
       <tr ng-repeat="employee in employees">
         <td><a ng-click="editEmployee(employee)">{{employee.name}}</a></td>
         <td>{{employee.email}}</td>
-        <td>{{employee.ssn}}</td>
+        <td>{{employee.ssn | empMaskNumber: 4 }}</td>
         <td>{{employee.salary | currency}}</td>
       </tr>
     </tbody>
