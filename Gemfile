@@ -45,6 +45,7 @@ gem 'bootstrap-sass', '~> 3.3.0'
 
 group :development, :test do
   gem 'rspec-rails', '~> 3.1.0'
+  gem 'jasmine-rails'
 end
 
 group :test do
